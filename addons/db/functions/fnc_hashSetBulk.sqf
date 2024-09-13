@@ -8,8 +8,8 @@
  *
  * Do not edit without permission!
  *
- * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivative 4.0 International License.
- * To view a copy of this license, vist https://creativecommons.org/licenses/by-nc-nd/4.0/ or send a letter to Creative Commons,
+ * This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+ * To view a copy of this license, vist https://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to Creative Commons,
  * PO Box 1866, Mountain View, CA 94042
  *
  * [Description]
