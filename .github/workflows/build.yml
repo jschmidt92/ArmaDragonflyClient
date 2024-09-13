@@ -8,6 +8,7 @@ on:
       - "addons/main/script_version.hpp"
       - "docs/**"
       - "tools/**"
+      - "LICENSE"
       - "README.md"
   workflow_dispatch:
 
