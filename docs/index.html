@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Knowledgebase</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <style>
+      .anchor span {
+        color: rgba(255, 255, 255, 0.87);
+      }
+      .anchor:hover {
+        text-decoration: none;
+      }
+      .anchor:hover:before {
+        color: #42d392;
+        content: "#";
+        float: left;
+        font-weight: 500;
+        margin-left: -0.87em;
+        padding-right: 0.23em;
+        transition: color 0.25s;
+      }
+      .app-name {
+        color: rgba(255, 255, 255, 0.87);
+      }
+      .app-nav li a {
+        color: rgba(235, 235, 235, 0.6);
+      }
+      .app-nav li ul {
+        background-color: #1a1a1a;
+        border: 1px solid rgba(0, 0, 0, 0.07);
+      }
+      .app-nav p {
+        color: rgba(255, 255, 255, 0.87);
+      }
+      .app-nav p:hover {
+        color: #42d392;
+        transition: color 0.25s;
+      }
+      .app-nav ul li a {
+        color: rgba(255, 255, 255, 0.87);
+      }
+      .markdown-section h1,
+      .markdown-section h2,
+      .markdown-section h3,
+      .markdown-section h4,
+      .markdown-section strong {
+        color: #42b883;
+      }
+      .markdown-section code,
+      .markdown-section pre {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .markdown-section pre > code {
+        background: initial;
+      }
+      .markdown-section tr:nth-child(2n) {
+        background-color: transparent;
+      }
+      ol li {
+        color: rgba(255, 255, 255, 0.87);
+      }
+      p {
+        color: rgba(255, 255, 255, 0.87);
+      }
+      ul li {
+        color: rgba(255, 255, 255, 0.87);
+      }
+      a {
+        text-decoration: none;
+      }
+      #readingTimeWrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: left 0.25s ease;
+      }
+      #readingTime {
+        margin: 0 auto;
+        max-width: 80%;
+        padding: 30px 15px 40px;
+        background-color: rgba(26, 26, 26, 0.8);
+        color: rgba(235, 235, 235, 0.6);
+      }
+      body.close #readingTimeWrapper {
+        left: 0;
+      }
+      .medium-zoom-overlay {
+        background: #1a1a1a !important;
+      }
+      .sidebar,
+      body {
+        background-color: #1a1a1a;
+        color: rgba(255, 255, 255, 0.75);
+      }
+      .sidebar-toggle {
+        background-color: transparent;
+        width: auto;
+      }
+      .sidebar ul li a {
+        color: rgba(235, 235, 235, 0.6);
+      }
+      .sidebar ul li a:hover {
+        color: #42d392;
+        text-decoration: none;
+        transition: color 0.25s;
+      }
+      .sidebar ul li a:active {
+        color: #42d392;
+      }
+      img[alt="logo"] {
+        float: right;
+      }
+      @media screen and (max-width: 768px) {
+        body.close .sidebar-toggle {
+          background-color: transparent;
+          transition: background-color 1s;
+          width: 284px;
+          padding: 10px;
+        }
+        #readingTimeWrapper {
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: "ArmaDragonflyClient",
+        repo: "https://github.com/jschmidt92/ArmaDragonflyClient",
+        loadNavbar: true,
+        mergeNavbar: true,
+      };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sqf.min.js"></script>
+    <script>
+      function get_text(el) {
+        let ret = "";
+        let length = el.childNodes.length;
+        for (let i = 0; i < length; i++) {
+          let node = el.childNodes[i];
+          if (node.nodeType != 8) {
+            ret += node.nodeType != 1 ? node.nodeValue : get_text(node);
+          }
+        }
+        return ret;
+      }
+
+      function updateReadingTimePosition() {
+        const sidebar = document.querySelector(".sidebar");
+        const content = document.querySelector(".content");
+        const readingTimeWrapper =
+          document.getElementById("readingTimeWrapper");
+
+        if (
+          window.innerWidth > 768 &&
+          !document.body.classList.contains("close")
+        ) {
+          readingTimeWrapper.style.left = sidebar.offsetWidth + "px";
+        } else {
+          readingTimeWrapper.style.left = "0";
+        }
+
+        readingTimeWrapper.style.top = content.offsetTop + "px";
+        readingTimeWrapper.style.paddingLeft = content.style.paddingLeft;
+      }
+
+      setTimeout(function () {
+        let main = document.getElementsByClassName("content")[0].parentElement;
+        let newWrapper = document.createElement("div");
+        newWrapper.id = "readingTimeWrapper";
+        main.insertBefore(newWrapper, main.lastChild);
+        let newElement = document.createElement("h4");
+        newElement.id = "readingTime";
+        newElement.style = "margin-bottom: -60px";
+        newWrapper.appendChild(newElement);
+
+        updateReadingTimePosition();
+        window.addEventListener("resize", updateReadingTimePosition);
+
+        const sidebarToggle = document.querySelector(".sidebar-toggle");
+        sidebarToggle.addEventListener("click", function () {
+          setTimeout(updateReadingTimePosition, 0);
+        });
+      }, 50);
+
+      let lastTime = 0;
+
+      setInterval(function () {
+        let words = get_text(document.getElementById("main"));
+        let time = Math.round(words.split(" ").length / 130);
+        if (time != lastTime) {
+          document.getElementById("readingTime").innerHTML =
+            "Reading Time: " + time + (time == 1 ? " minute" : " minutes");
+          lastTime = time;
+        }
+      }, 150);
+    </script>
+  </body>
+</html>

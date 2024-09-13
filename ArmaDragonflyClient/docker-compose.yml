@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  dragonfly:
+    image: 'docker.dragonflydb.io/dragonflydb/dragonfly'
+    container_name: dragonflydb
+    ulimits:
+      memlock: -1
+    command: >
+      dragonfly
+      --requirepass ${DRAGONFLY_PASSWORD}
+    ports:
+      - "6379:6379"
+    # For better performance, consider `host` mode instead `port` to avoid docker NAT.
+    # `host` mode is NOT currently supported in Swarm Mode.
+    # https://docs.docker.com/compose/compose-file/compose-file-v3/#network_mode
+    # network_mode: "host"
+    volumes:
+      - dragonflydata:/data
+    env_file:
+      - .env
+    restart: unless-stopped
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+    env_file:
+      - .env
+    restart: unless-stopped
+volumes:
+  dragonflydata:
+  mongodata:
+

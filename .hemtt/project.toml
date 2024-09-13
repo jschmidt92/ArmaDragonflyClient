@@ -1,0 +1,16 @@
+name = "ArmaDragonflyClient"
+prefix = "dragonfly"
+author = "J.Schmidt and CreedCoder"
+mainprefix = "z"
+
+[files]
+include = [
+    "config.xml",
+    "dragonfly_version.json",
+    "mod.cpp",
+    "*.paa",
+    "dragonfly/**"
+]
+
+[version]
+git_hash = 0 # Disabled

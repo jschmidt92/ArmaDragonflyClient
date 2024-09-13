@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArmaDragonflyClient>
+  <Host>127.0.0.1</Host>
+  <Port>6379</Port>
+  <Password>xyz123</Password>
+  <Context>false</Context>
+  <Debug>false</Debug>
+</ArmaDragonflyClient>

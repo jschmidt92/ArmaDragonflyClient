@@ -1,0 +1,17 @@
+*.7z
+*.biprivatekey
+*.dfs
+*.dll
+*.txt
+.hemtt/missions
+.hemttout
+.vs
+.vscode/settings.json
+_site/
+bin
+Debug
+Release
+x64
+ArmaDragonFlyApi
+obj
+releases
