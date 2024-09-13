@@ -16,7 +16,7 @@ Welcome to **ArmaDragonflyClient**.
 This addon was designed for the Arma 3 Community.\
 If something is broken, contact **J. Schmidt92** or open a new issue on **[GitHub](https://github.com/jschmidt92/ArmaDragonflyClient/issues)**.
 
-Feel free to check out the **[Roadmap](https://github.com/users/jschmidt92/projects/6)**. _(WIP)_
+Feel free to check out the **[Roadmap](https://github.com/users/jschmidt92/projects/7)**. _(WIP)_
 
 Copyright © 2024 Creedcoder, J.Schmidt, All rights reserved\
 Do not edit without permission!

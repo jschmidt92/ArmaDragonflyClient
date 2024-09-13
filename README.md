@@ -21,7 +21,7 @@ If something is broken, contact **J. Schmidt92** or open a new issue on **[GitHu
 
 **For more information, [read the Documents.](https://jschmidt92.github.io/ArmaDragonflyClient/#/)**
 
-**For Roadmap, [visit the project page.](https://github.com/users/jschmidt92/projects/6)**
+**For Roadmap, [visit the project page.](https://github.com/users/jschmidt92/projects/7)** _(WIP)_
 
 ## Contributors
 * **_Creedcoder_** for his contributions, help, input and time
