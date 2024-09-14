@@ -1,14 +1,11 @@
 <p align="center">
 	<!-- <img src="https://raw.githubusercontent.com/jschmidt92/ArmaDragonflyClient/master/images/logo.png"> -->
 	<a href="https://github.com/jschmidt92/ArmaDragonflyClient/releases/latest">
-		<img src="https://img.shields.io/github/v/release/jschmidt92/ArmaDragonflyClient?label=latest%C2%A0release" alt="latest-release">
-	</a>
-		<a href="https://github.com/jschmidt92/ArmaDragonflyClient/issues">
-		<img src="https://img.shields.io/github/issues/jschmidt92/ArmaDragonflyClient" alt="open-issues">
-	</a>
+		<img src="https://img.shields.io/github/v/release/jschmidt92/ArmaDragonflyClient?label=latest%C2%A0release" alt="latest-release" /></a>
+	<a href="https://github.com/jschmidt92/ArmaDragonflyClient/issues">
+		<img src="https://img.shields.io/github/issues/jschmidt92/ArmaDragonflyClient" alt="open-issues" /></a>
 	<a href="https://github.com/jschmidt92/ArmaDragonflyClient/actions/workflows/build.yml">
-		<img src="https://img.shields.io/github/actions/workflow/status/jschmidt92/ArmaDragonflyClient/build.yml?branch=master" alt="build-status">
-	</a>
+		<img src="https://img.shields.io/github/actions/workflow/status/jschmidt92/ArmaDragonflyClient/build.yml?branch=master" alt="build-status" /></a>
 </p>
 
 Welcome to **ArmaDragonflyClient**.
