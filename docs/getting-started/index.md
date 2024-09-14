@@ -59,13 +59,16 @@ if (isServer || isDedicated) then {
        // First Script or Function to execute `dragonfly_db_fnc_addTask`
        value_ExampleDone = false;
        publicVariable "value_ExampleDone";
+       ...
 
        // Callback function to process the retrieved data
+       ...
        value_ExampleDone = true;
        publicVariable "value_ExampleDone";
 
        // Next Script or Function to execute `dragonfly_db_fnc_addTask`
        waitUntil {value_ExampleDone};
+       ...
        ```
 
 By following these steps and leveraging the `dragonfly_db_fnc_addTask` function, you can implement robust data persistence functionality using DragonflyDB in your Arma 3 project.
