@@ -2,18 +2,20 @@
 
 Read through [Getting Started](https://www.dragonflydb.io/docs/getting-started) Guide from DragonflyDB to get DragonflyDB up and running on your machine or use the provided binaries within the `dragonfly` folder.
 
-## Prerequisites (DragonflyDB)
+## DragonflyDB
+### Prerequisites
 - You must be running a Linux-based OS (if using Mac, run using Docker, Windows WSL will work as well).
 - Network access
 - Minimum 4GB of RAM to get the benifits of Dragonfly
 - Minimum 1CPU Core
 - Linux Kernel 4.19 or higher
 
-## OS Compatibility (ArmaDragonflyClient)
+## ArmaDragonflyClient
+### OS Compatibility
 
 ArmaDragonflyClient is currently only compatible with Windows. Linux is planned for a future release.
 
-## Usage
+### Usage
 
 1. Download the latest release from the [Releases](https://github.com/jschmidt92/ArmaDragonflyClient/releases) page.
 2. Extract the zip file to your Arma 3 directory.
@@ -81,7 +83,7 @@ if (isServer || isDedicated) then {
 
 By following these steps and leveraging the `dragonfly_db_fnc_addTask` function, you can implement robust data persistence functionality using ArmaDragonflyClient in your Arma 3 project.
 
-### Task Types
+#### Task Types
 
 | Task Type  | Data Type                                                                                                |
 | ---------- | -------------------------------------------------------------------------------------------------------- |
