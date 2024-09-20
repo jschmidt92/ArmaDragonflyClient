@@ -2,7 +2,7 @@
 
 ## Description
 
-Get all elements of list stored at key from DB.
+Get all elements of list stored at `key` from DragonflyDB.
 
 ## Usage
 

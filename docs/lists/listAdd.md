@@ -2,7 +2,7 @@
 
 ## Description
 
-Add element to list stored at key from DB.
+Add element to list stored at `key` from DragonflyDB.
 
 ## Usage
 

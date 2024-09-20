@@ -2,7 +2,7 @@
 
 ## Description
 
-Delete stored key from DB.
+Remove the specified `key` from DragonflyDB.
 
 ## Usage
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Get value of stored key from DB.
+Get the value of stored `key` from DragonflyDB.
 
 ## Usage
 

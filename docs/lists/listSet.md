@@ -2,7 +2,7 @@
 
 ## Description
 
-Set element of list stored at key from DB.
+Set element of list stored at `key` from DragonflyDB.
 
 ## Usage
 

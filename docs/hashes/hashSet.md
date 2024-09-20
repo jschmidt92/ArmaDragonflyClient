@@ -2,7 +2,7 @@
 
 ## Description
 
-Set value of field in hash stored at key from DB.
+Set the specified field to the respective value in the hash stored at `key` from DragonflyDB.
 
 ## Usage
 

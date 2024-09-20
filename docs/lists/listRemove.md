@@ -2,7 +2,7 @@
 
 ## Description
 
-Remove element of list stored at key from DB.
+Remove element of list stored at `key` from DragonflyDB.
 
 ## Usage
 

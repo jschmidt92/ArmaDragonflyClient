@@ -2,7 +2,7 @@
 
 ## Description
 
-Set value of stored key from DB.
+Set the value of stored `key` from DragonflyDB.
 
 ## Usage
 
