@@ -48,7 +48,7 @@ if (isServer || isDedicated) then {
 
    - To load data, you can create a task using the appropriate task type, such as "hgetall" or "hget":
      ```sqf
-     ["hgetallid", getPlayerUID player, "", -1, [], "myCallback", false, netId player] call dragonfly_db_fnc_addTask;
+     ["hgetid", getPlayerUID player, "loadout", -1, [], "myCallbackFunction", false, netId player] call dragonfly_db_fnc_addTask;
      ```
 
      This example adds a task to retrieve all values from the hash player UID and pass the retrieved data to the "myCallback" function for further processing.
