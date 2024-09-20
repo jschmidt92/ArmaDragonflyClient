@@ -8,7 +8,7 @@ ArmaDragonflyClient is currently only compatible with Windows. Linux is planned 
 
 ## Usage
 
-1. Download the latest release from the [Releases](https://github.com/ArmaDragonflyClient/ArmaDragonflyClient/releases) page.
+1. Download the latest release from the [Releases](https://github.com/jschmidt92/ArmaDragonflyClient/releases) page.
 2. Extract the zip file to your Arma 3 directory.
 3. Create the `init.sqf` file in your mission folder and add the following code:
 
