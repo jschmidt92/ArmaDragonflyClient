@@ -2,7 +2,7 @@
 
 ## Description
 
-Get all fields and values from hash stored at key from DB.
+Get all fields and values from the hash stored at `key` from DragonflyDB.
 
 ## Usage
 
