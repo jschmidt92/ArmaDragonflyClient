@@ -2,7 +2,7 @@
 
 ## Description
 
-Get value of field in hash stored at key from DB.
+Get the value associated with `field` in hash stored at `key` from DragonflyDB.
 
 ## Usage
 
