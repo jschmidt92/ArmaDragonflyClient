@@ -38,6 +38,7 @@ if (isServer || isDedicated) then {
    - Refer to the [Add Task](https://jschmidt92.github.io/ArmaDragonflyClient/#/main/addTask) wiki page for detailed information on how to create tasks in DragonflyDB.
    - Utilize the `dragonfly_db_fnc_addTask` function to add tasks to the DragonflyDB queue for saving and loading data.
    - Here's an example of how you can create a task to save data:
+       > <span style="color:cyan">**_IMPORTANT:_**</span> All data must be encapsulated by brackets
 
      ```sqf
      ["hsetid", getPlayerUID player, "loadout", -1, getUnitLoadout player] call dragonfly_db_fnc_addTask;
