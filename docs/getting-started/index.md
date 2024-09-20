@@ -2,7 +2,14 @@
 
 Read through [Getting Started](https://www.dragonflydb.io/docs/getting-started) Guide from DragonflyDB to get DragonflyDB up and running on your machine or use the provided binaries within the `dragonfly` folder.
 
-## OS Compatibility
+## DragonflyDB Prerequisites
+- You must be running a Linux-based OS (if using Mac, run using Docker, Windows WSL will work as well).
+- Network access
+- Minimum 4GB of RAM to get the benifits of Dragonfly
+- Minimum 1CPU Core
+- Linux Kernel 4.19 or higher
+
+## ArmaDragonflyClient OS Compatibility
 
 ArmaDragonflyClient is currently only compatible with Windows. Linux is planned for a future release.
 
