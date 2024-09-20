@@ -41,7 +41,7 @@ if (isServer || isDedicated) then {
        > <span style="color:cyan">**_IMPORTANT:_**</span> All data must be encapsulated by brackets
 
      ```sqf
-     ["hsetid", getPlayerUID player, "loadout", -1, getUnitLoadout player] call dragonfly_db_fnc_addTask;
+     ["hsetid", getPlayerUID player, "loadout", -1, [getUnitLoadout player]] call dragonfly_db_fnc_addTask;
      ```
 
      This example adds a task to set the value of the field "loadout" in the hash player UID to the player's loadout.
